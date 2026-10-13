@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#a5f5e2"><meta name="description" content="Loncheras, termos y accesorios infantiles para hacer de cada comida un momento especial. Market Nukemaleu."><title>Accesorios | Market Nukemaleu</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head><body data-page="accessories">
+  <div class="announcement">Pequeños detalles que hacen grandes momentos ♡</div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Market Nukemaleu, inicio"><span class="brand-mark">♡</span><span class="brand-name">MARKET <b>NUKEMALEU</b><small>ALIMENTACIÓN INFANTIL CON AMOR</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" data-page="index.html">Inicio</a><a href="tienda.html" data-page="tienda.html">Tienda</a><a href="accesorios.html" data-page="accesorios.html">Accesorios</a><a href="quienes-somos.html" data-page="quienes-somos.html">Quiénes somos</a><a href="contacto.html" data-page="contacto.html">Contacto</a>
+    </nav>
+    <button class="cart-button" id="openCart" aria-label="Abrir carrito"><span aria-hidden="true">🛍️</span><span>Mi carrito</span><b id="cartCount">0</b></button>
+  </header>
+  <main>
+    <section class="page-banner"><span class="eyebrow">PEQUEÑOS DETALLES, GRANDES IDEAS</span><h1>Accesorios para loncheras <em>con creatividad</em></h1><p>Pinchitos, cortadores y complementos para hacer más atractiva la presentación de los alimentos.</p></section>
+    <section class="section shop-section"><div class="product-grid" id="productGrid" aria-live="polite"></div><p class="catalog-note">¿Quieres ayuda para elegir? <a href="contacto.html">Hablemos por WhatsApp.</a></p></section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand"><a class="brand" href="index.html"><span class="brand-mark">♡</span><span class="brand-name">MARKET <b>NUKEMALEU</b><small>ALIMENTACIÓN INFANTIL CON AMOR</small></span></a><p>Pequeños detalles que hacen grandes momentos.</p></div>
+      <div><h3>Explora</h3><a href="tienda.html">Tienda</a><a href="quienes-somos.html">Nuestra propuesta</a><a href="quienes-somos.html">Quiénes somos</a></div>
+      <div><h3>¿Necesitas ayuda?</h3><a href="contacto.html">Contacto</a><a href="https://wa.me/573052443283" target="_blank" rel="noopener">WhatsApp</a><a href="tienda.html">Ver productos</a></div>
+      <div><h3>Síguenos</h3><a href="https://www.instagram.com/market_nukemaleu/" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Market Nukemaleu. Todos los derechos reservados.</span><span>Hecho con ♡ para las familias.</span></div>
+  </footer>
+
+
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrito de compras" aria-hidden="true">
+    <div class="cart-header"><div><span class="eyebrow">TU SELECCIÓN</span><h2>Mi carrito <span id="drawerCount">(0)</span></h2></div><button id="closeCart" class="close-cart" aria-label="Cerrar carrito">×</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer"><div class="cart-total"><span>Total estimado</span><strong id="cartTotal">$0</strong></div><p>El envío se confirma según tu ubicación. El pedido se revisará por WhatsApp antes del pago.</p><button id="checkoutButton" class="button button-primary checkout-button">Continuar por WhatsApp <span>↗</span></button><button id="continueShopping" class="continue-button">Seguir mirando productos</button></div>
+  </aside>
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="catalog.js"></script><script src="home-widgets.js"></script><script src="app.js"></script></body></html>

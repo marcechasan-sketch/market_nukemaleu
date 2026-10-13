@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#a5f5e2"><meta name="description" content="Loncheras, termos y accesorios infantiles para hacer de cada comida un momento especial. Market Nukemaleu."><title>Quiénes somos | Market Nukemaleu</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head><body>
+  <div class="announcement">Pequeños detalles que hacen grandes momentos ♡</div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Market Nukemaleu, inicio"><span class="brand-mark">♡</span><span class="brand-name">MARKET <b>NUKEMALEU</b><small>ALIMENTACIÓN INFANTIL CON AMOR</small></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" data-page="index.html">Inicio</a><a href="tienda.html" data-page="tienda.html">Tienda</a><a href="accesorios.html" data-page="accesorios.html">Accesorios</a><a href="quienes-somos.html" data-page="quienes-somos.html">Quiénes somos</a><a href="contacto.html" data-page="contacto.html">Contacto</a>
+    </nav>
+    <button class="cart-button" id="openCart" aria-label="Abrir carrito"><span aria-hidden="true">🛍️</span><span>Mi carrito</span><b id="cartCount">0</b></button>
+  </header>
+  <main>
+    <section class="page-banner"><span class="eyebrow">HOLA, SOMOS MARKET NUKEMALEU</span><h1>Detrás de cada detalle, <em>hay mucho amor.</em></h1><p>Acompañamos a las familias en el día a día de la alimentación infantil.</p></section>
+    <section class="about-section section"><div class="about-copy"><span class="eyebrow">NUESTRA PROPUESTA</span><h2>No se trata solo de una lonchera.<br><em>Se trata de lo que vivimos con ella.</em></h2><p>Trabajamos para que cada niño disfrute más de una alimentación saludable y cada familia viva la hora de comer con mayor tranquilidad, alegría y amor.</p><p>Seleccionamos loncheras, termos y accesorios que ayudan a presentar los alimentos con creatividad, despertar la curiosidad de los niños y convertir cada comida en un momento especial.</p></div><div class="about-visual"><div class="about-frame"><span class="about-heart">♡</span><span class="about-emoji">🍱</span><h3>Pequeños detalles</h3><p>que hacen grandes momentos</p></div><span class="mini-star">✦</span></div></section>
+    <section class="story-section"><div class="story-inner"><span class="eyebrow">UNA HISTORIA QUE NACIÓ EN FAMILIA</span><h2>¿Por qué nació <em>Market Nukemaleu?</em></h2><p>Market Nukemaleu nació de una experiencia muy cercana: querer que la alimentación de los niños fuera más divertida, creativa y tranquila para toda la familia. Como mamá, conozco las preguntas y preocupaciones que pueden aparecer cuando queremos que nuestros peques coman mejor.</p><p>De esa motivación surgió el deseo de encontrar productos prácticos y detalles creativos que ayudaran a transformar la rutina en una experiencia más bonita. Hoy queremos compartir esas ideas con más familias, acompañándolas con cercanía y mucho amor.</p><div class="story-signature">Con cariño, <strong>Market Nukemaleu</strong> ♡</div></div></section>
+    <section class="promise-row"><div><span>♡</span><b>Elegidos con cariño</b><small>Detalles pensados para los peques</small></div><div><span>✿</span><b>Ideas para inspirarte</b><small>Más creatividad a la hora de comer</small></div><div><span>☻</span><b>Acompañamiento cercano</b><small>Estamos aquí para ayudarte</small></div></section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand"><a class="brand" href="index.html"><span class="brand-mark">♡</span><span class="brand-name">MARKET <b>NUKEMALEU</b><small>ALIMENTACIÓN INFANTIL CON AMOR</small></span></a><p>Pequeños detalles que hacen grandes momentos.</p></div>
+      <div><h3>Explora</h3><a href="tienda.html">Tienda</a><a href="quienes-somos.html">Nuestra propuesta</a><a href="quienes-somos.html">Quiénes somos</a></div>
+      <div><h3>¿Necesitas ayuda?</h3><a href="contacto.html">Contacto</a><a href="https://wa.me/573052443283" target="_blank" rel="noopener">WhatsApp</a><a href="tienda.html">Ver productos</a></div>
+      <div><h3>Síguenos</h3><a href="https://www.instagram.com/market_nukemaleu/" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Market Nukemaleu. Todos los derechos reservados.</span><span>Hecho con ♡ para las familias.</span></div>
+  </footer>
+
+
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrito de compras" aria-hidden="true">
+    <div class="cart-header"><div><span class="eyebrow">TU SELECCIÓN</span><h2>Mi carrito <span id="drawerCount">(0)</span></h2></div><button id="closeCart" class="close-cart" aria-label="Cerrar carrito">×</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer"><div class="cart-total"><span>Total estimado</span><strong id="cartTotal">$0</strong></div><p>El envío se confirma según tu ubicación. El pedido se revisará por WhatsApp antes del pago.</p><button id="checkoutButton" class="button button-primary checkout-button">Continuar por WhatsApp <span>↗</span></button><button id="continueShopping" class="continue-button">Seguir mirando productos</button></div>
+  </aside>
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="catalog.js"></script><script src="home-widgets.js"></script><script src="app.js"></script></body></html>
