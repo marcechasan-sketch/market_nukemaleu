@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#a5f5e2">
+  <meta name="description" content="Loncheras, termos y accesorios infantiles para hacer de cada comida un momento especial. Market Nukemaleu.">
+  <title>Market Nukemaleu | Pequeños detalles que hacen grandes momentos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">Pequeños detalles que hacen grandes momentos ♡</div>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Market Nukemaleu, inicio">
+      <span class="brand-mark">♡</span>
+      <span class="brand-name">MARKET <b>NUKEMALEU</b><small>ALIMENTACIÓN INFANTIL CON AMOR</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#inicio">Inicio</a>
+      <a href="#tienda">Tienda</a>
+      <a href="#propuesta">Nuestra propuesta</a>
+      <a href="#nosotros">Quiénes somos</a>
+      <a href="#historia">Nuestra historia</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button class="cart-button" id="openCart" aria-label="Abrir carrito">
+      <span aria-hidden="true">🛍️</span><span>Mi carrito</span><b id="cartCount">0</b>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <span class="eyebrow">PARA SUS PEQUEÑOS GRANDES MOMENTOS</span>
+        <h1>Hacer de cada comida<br><em>un momento especial.</em></h1>
+        <p>Loncheras, termos y accesorios que llenan de creatividad, color y amor la alimentación de nuestros peques.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#tienda">Explorar productos <span>→</span></a>
+          <a class="text-link" href="#propuesta">Conoce lo que nos inspira</a>
+        </div>
+        <div class="hero-note"><span>♡</span> Ideas bonitas para acompañar a tu familia cada día.</div>
+      </div>
+      <div class="hero-art">
+        <div class="blob blob-one"></div><div class="blob blob-two"></div>
+        <div class="hero-card hero-card-main">
+          <div class="hero-illustration">🎒</div>
+          <span>Pequeñas aventuras</span>
+          <strong>comienzan aquí</strong>
+        </div>
+        <div class="floating-tag tag-top">🍓 ¡Más color!</div>
+        <div class="floating-tag tag-bottom">💛 Hecho para compartir</div>
+        <span class="sparkle sparkle-one">✦</span><span class="sparkle sparkle-two">✧</span>
+      </div>
+    </section>
+
+    <section class="category-strip" aria-label="Categorías principales">
+      <a href="#tienda" data-jump-category="Loncheras"><span class="category-icon pink">🎒</span><span><b>Loncheras</b><small>Todo en su lugar</small></span><span class="arrow">↗</span></a>
+      <a href="#tienda" data-jump-category="Termos y botilitos"><span class="category-icon mint">🥤</span><span><b>Termos y botilitos</b><small>Hidratación feliz</small></span><span class="arrow">↗</span></a>
+      <a href="#tienda" data-jump-category="Accesorios"><span class="category-icon yellow">🍉</span><span><b>Accesorios</b><small>Pequeños detalles</small></span><span class="arrow">↗</span></a>
+    </section>
+
+    <section class="section shop-section" id="tienda">
+      <div class="section-heading">
+        <div><span class="eyebrow">DESCUBRE TU FAVORITO</span><h2>Una tienda llena de <em>momentos felices</em></h2></div>
+        <p>Encuentra esos detalles que hacen más divertida la hora de comer.</p>
+      </div>
+      <div class="shop-tools">
+        <div class="filter-tabs" id="categoryFilters">
+          <button class="filter active" data-category="Todos">Todos</button>
+          <button class="filter" data-category="Loncheras">Loncheras</button>
+          <button class="filter" data-category="Termos y botilitos">Termos y botilitos</button>
+          <button class="filter" data-category="Accesorios">Accesorios</button>
+        </div>
+        <label class="search-box"><span>⌕</span><input id="productSearch" type="search" placeholder="Buscar un producto..." aria-label="Buscar productos"></label>
+      </div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <p class="catalog-note">¿Buscas algo especial? <a href="#contacto">Escríbenos y te ayudamos.</a></p>
+    </section>
+
+    <section class="value-section" id="propuesta">
+      <div class="value-art"><div class="value-circle">♡</div><div class="value-sticker">Con amor<br>para ellos</div><span class="fruit fruit-one">🍓</span><span class="fruit fruit-two">🍊</span><span class="fruit fruit-three">🌈</span></div>
+      <div class="value-copy">
+        <span class="eyebrow">NUESTRA PROPUESTA DE VALOR</span>
+        <h2>No se trata solo de una lonchera.<br><em>Se trata de lo que vivimos con ella.</em></h2>
+        <p>Trabajamos para que cada niño disfrute más de una alimentación saludable y cada familia viva la hora de comer con mayor tranquilidad, alegría y amor.</p>
+        <p>Por eso, seleccionamos loncheras, termos y accesorios que ayudan a presentar los alimentos con creatividad, despertar la curiosidad de los niños y convertir cada comida en un momento especial.</p>
+        <a class="button button-outline" href="#tienda">Encuentra tus favoritos <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="about-section section" id="nosotros">
+      <div class="about-copy">
+        <span class="eyebrow">HOLA, SOMOS MARKET NUKEMALEU</span>
+        <h2>Detrás de cada detalle,<br><em>hay mucho amor.</em></h2>
+        <p>Somos una marca que acompaña a las familias en el día a día de la alimentación infantil. Creemos que los pequeños detalles pueden despertar curiosidad, crear sonrisas y hacer más agradable la hora de comer.</p>
+        <p>Elegimos productos pensando en las necesidades reales de mamás, papás y cuidadores: practicidad, organización y ese toque creativo que hace la diferencia.</p>
+        <a class="text-link" href="#historia">Conoce por qué nació nuestra marca <span>→</span></a>
+      </div>
+      <div class="about-visual"><div class="about-frame"><span class="about-heart">♡</span><span class="about-emoji">🍱</span><h3>Pequeños detalles</h3><p>que hacen grandes momentos</p></div><span class="mini-star">✦</span></div>
+    </section>
+
+    <section class="story-section" id="historia">
+      <div class="story-inner">
+        <span class="eyebrow">UNA HISTORIA QUE NACIÓ EN FAMILIA</span>
+        <h2>¿Por qué nació <em>Market Nukemaleu?</em></h2>
+        <p>Market Nukemaleu nació de una experiencia muy cercana: querer que la alimentación de los niños fuera más divertida, creativa y tranquila para toda la familia. Como mamá, conozco las preguntas y preocupaciones que pueden aparecer cuando queremos que nuestros peques coman mejor.</p>
+        <p>De esa motivación surgió el deseo de encontrar productos prácticos y detalles creativos que ayudaran a transformar la rutina en una experiencia más bonita. Hoy queremos compartir esas ideas con más familias, acompañándolas con cercanía y mucho amor.</p>
+        <div class="story-signature">Con cariño, <strong>Market Nukemaleu</strong> ♡</div>
+      </div>
+    </section>
+
+    <section class="promise-row">
+      <div><span>♡</span><b>Elegidos con cariño</b><small>Detalles pensados para los peques</small></div>
+      <div><span>✿</span><b>Ideas para inspirarte</b><small>Más creatividad a la hora de comer</small></div>
+      <div><span>☻</span><b>Acompañamiento cercano</b><small>Estamos aquí para ayudarte</small></div>
+    </section>
+
+    <section class="contact-section" id="contacto">
+      <div><span class="eyebrow">HABLEMOS</span><h2>¿Te ayudamos a elegir?</h2><p>Cuéntanos qué estás buscando. Será un gusto ayudarte a encontrar el detalle ideal para tu peque.</p></div>
+      <a class="button button-light" href="https://wa.me/573052443283?text=Hola%20Market%20Nukemaleu%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20productos." target="_blank" rel="noopener">Escríbenos por WhatsApp <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand"><a class="brand" href="#inicio"><span class="brand-mark">♡</span><span class="brand-name">MARKET <b>NUKEMALEU</b><small>ALIMENTACIÓN INFANTIL CON AMOR</small></span></a><p>Pequeños detalles que hacen grandes momentos.</p></div>
+      <div><h3>Explora</h3><a href="#tienda">Tienda</a><a href="#propuesta">Nuestra propuesta</a><a href="#nosotros">Quiénes somos</a></div>
+      <div><h3>¿Necesitas ayuda?</h3><a href="#contacto">Contacto</a><a href="https://wa.me/573052443283" target="_blank" rel="noopener">WhatsApp</a><a href="#tienda">Ver productos</a></div>
+      <div><h3>Síguenos</h3><a href="https://www.instagram.com/market_nukemaleu/" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Market Nukemaleu. Todos los derechos reservados.</span><span>Hecho con ♡ para las familias.</span></div>
+  </footer>
+
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrito de compras" aria-hidden="true">
+    <div class="cart-header"><div><span class="eyebrow">TU SELECCIÓN</span><h2>Mi carrito <span id="drawerCount">(0)</span></h2></div><button id="closeCart" class="close-cart" aria-label="Cerrar carrito">×</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-footer"><div class="cart-total"><span>Total estimado</span><strong id="cartTotal">$0</strong></div><p>El envío se confirma según tu ubicación. El pedido se revisará por WhatsApp antes del pago.</p><button id="checkoutButton" class="button button-primary checkout-button">Continuar por WhatsApp <span>↗</span></button><button id="continueShopping" class="continue-button">Seguir mirando productos</button></div>
+  </aside>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="catalog.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
