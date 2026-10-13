@@ -20,7 +20,7 @@
   height: 45px !important;
   max-width: 45px !important;
   max-height: 45px !important;
-  object-fit: contain;
-  display: block;
-  flex-shrink: 0;
+  object-fit: contain !important;
+  display: block !important;
+  flex: 0 0 45px !important;
 }
